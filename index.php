@@ -5,8 +5,12 @@
 	<meta charset="utf-8">
 	<title>Hangman</title>
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<?php
+/*
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/hangman.js"></script>
+*/
+?>
 
 </head>
 <body>
@@ -14,18 +18,20 @@
 	<article>
 <?php
 
-echo $word;
-echo strlen($word)
+//echo $word;
+//echo strlen($word)
 ?>
 		<br />
 
-<form method="post" action="/">
-	<input type="text" value="test"></input>
-	<input type="email"></input>
-	<input type="submit" value="try_again"/>
+<form method="post" action="">
+	<input type="text" value="test" name="test" >
+	<input type="email" name="email">
+	<input type="submit" value="try_again">
+	<input type="submit" name="action" value="Go" />
 </form>
-
-<form action="index.php" method="post" enctype="multipart/form-data">
+<!--<form action="directory" method="post"> 
+-->
+<form action="index.php" method="POST" enctype="multipart/form-data">
 	<p>Please select the file you would like to upload.
 	<input type="file" name="upload"> 
 	<br>
