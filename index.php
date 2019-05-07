@@ -18,7 +18,7 @@ echo strlen($word)
 ?>
 		<br />
 
-		<a href="#">try again</a>
+		<a href="again">try again</a>
 	</article>
 	<footer></footer>
 </body>
