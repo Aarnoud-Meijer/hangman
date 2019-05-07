@@ -6,13 +6,14 @@ session_start();
 
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-	// var_dump($_POST);
+	var_dump($_POST);
 	// var_dump($_SERVER);
 	// var_dump($_REQUEST);
 	if(!empty($_POST['action']) && $_POST['action']=="try again"){
 		// clean session
 		$_SESSION['word'] = null;
-		
+	}elseif(!empty($_POST['character']) && $_POST['character']=="a"){
+		echo "bla";
 	}
 }
 
