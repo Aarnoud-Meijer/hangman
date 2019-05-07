@@ -6,13 +6,15 @@ session_start();
 
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-	var_dump($_POST);
+	// var_dump($_POST);
 	// var_dump($_SERVER);
-	var_dump($_REQUEST);
+	// var_dump($_REQUEST);
+	if(!empty($_POST['action']) && $_POST['action']=="try again"){
+		// clean session
+		$_SESSION['word'] = null;
+		
+	}
 }
-
-//	var_dump($_REQUEST);
-//var_dump($_GET);
 
 // if get or post
 //var_dump($_GET);
@@ -45,6 +47,7 @@ if(empty($_SESSION['word'])){
 // get random word
 // $word = $words[rand(0, sizeof($words))];
 
+echo $_SESSION['word'];
 
 
 

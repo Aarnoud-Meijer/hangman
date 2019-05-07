@@ -24,9 +24,10 @@
 		<br />
 
 <form method="post" action="">
-	<input type="text" value="test" name="test" >
+	<input type="text" value="test" name="action" >
 	<input type="email" name="email">
 	<input type="submit" value="try_again">
+	<input type="submit" name="action" value="try again" />
 	<input type="submit" name="action" value="Go" />
 </form>
 <!--<form action="directory" method="post"> 
