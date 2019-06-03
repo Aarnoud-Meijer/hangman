@@ -22,6 +22,12 @@
 	<input type="text" value="test" name="test" >
 <?php
 	// 26 A- Z buttons
+	// range(a-z)
+	$cssIdrange =  implode (", ", preg_filter('/^/', '#', range('a', 'z')));
+	foreach(range('A', 'Z') as $x){
+		echo "\t<input type=\"button\" name=\"character\" value=\"".$x."\" />\n";
+		
+	}
 ?>
 	<input type="button" name="character" value="a" />
 	<input type="submit" name="action" value="try again" />
